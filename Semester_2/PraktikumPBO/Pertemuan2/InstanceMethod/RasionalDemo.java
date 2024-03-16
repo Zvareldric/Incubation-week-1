@@ -1,0 +1,71 @@
+package Semester_2.PraktikumPBO.Pertemuan2.InstanceMethod;
+
+public class RasionalDemo {
+    public static void main(String[] args) {
+        Rasional R1 = new Rasional(1,2);
+        Rasional R2 = new Rasional(1,3);
+        System.out.println("R1.isRasional: " + R1.isRasional());
+        System.out.println("R2.isRasional: " + R2.isRasional());
+        System.out.println();
+
+        System.out.println("R1 > R2 : " + R1.moreThan(R2));
+        System.out.println();
+
+        //soal no 2 pada main
+        System.out.println("R1 < R2 : " + R1.lessThan(R2));
+        System.out.println();
+
+        System.out.println("R1 <= R2 : " + R1.lessThanEqual(R2));
+        System.out.println();
+
+        System.out.println("R1 >= R2 : " + R1.moreThanEqual(R2));
+        System.out.println();
+
+        
+
+        System.out.print("R1 : ");
+        R1.cetak();
+        System.out.print("R2 : ");
+        R2.cetak();
+        System.out.println();
+
+        R1.Sederhana();
+        R2.Sederhana();
+
+        System.out.print("R1 : ");
+        R1.cetak();
+        System.out.print("R2 : ");
+        R2.cetak();
+        System.out.println();
+
+        System.out.println("Setelah dilakukan Cast ke double menjadi : " );
+        System.out.println("R1 : " + R1.Cast());
+
+
+        System.out.println("R2 : " + R2.Cast());
+        System.out.println();
+
+        // R1.negasi();
+        // System.out.print("Unary negasi dari R1 : ");
+        // R1.cetak();
+        // System.out.println();
+
+        //memanggil method penjumlahan
+        R1.unaryPlus(R2);
+        System.out.println();
+
+        //soal no 4
+
+        //memanggil method pengurangan
+        R1.unarySubtract(R2);
+        System.out.println();
+
+        //memanggil method perkalian
+        R1.unaryMultiply(R2);
+        System.out.println();
+
+        //memanggil method pembagian
+        R1.unaryDivide(R2);
+        System.out.println();
+    }
+}
