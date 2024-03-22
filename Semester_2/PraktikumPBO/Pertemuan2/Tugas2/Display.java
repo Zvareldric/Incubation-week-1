@@ -68,7 +68,7 @@ public class Display {
                 System.out.println("Input tidak valid");
                 break;
         }
-        kategori.hitungJumlahKata();
+        // kategori.hitungJumlahKata();
         kategori.cekPersentaseKesamaan();
         kategori.displayMessage();
 
